@@ -21,7 +21,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install / Enable IIS in Windows WITH CGI
 - Install PHP Manager for IIS, Install Rewrite Module, download PHP, install C++ redistributable, and install MySQL.
 - Set up MySQL
-- Item 5
+- Register PHP from within IIS
 
 <h2>Installation Steps</h2>
 
@@ -60,5 +60,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 4. Next, set up MySQL. Launch MySQL, press next then press standard configuration, press next again, create a password then press next, finally press execute. A database is now installed on the VM which is used for osTicket.
+</p>
+<br />
+<p>
+<img src="https://i.ibb.co/db6YVtz/lab3-9.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+5. Next, register PHP from within IIS. Go to the start menu, search IIS and run it as an admin. Double click PHP manager, click "register new PHP version", browse for the PHP folder we created in the C drive earlier, open the folder and click "php-cgi", next press ok. Finally, restart the server, click on the name of the server then click restart in the right hand corner.
 </p>
 <br />
