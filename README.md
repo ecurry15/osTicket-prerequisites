@@ -20,7 +20,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Set up an Azure Windows 10 Virtual machine.
 - Install / Enable IIS in Windows WITH CGI
 - Install PHP Manager for IIS, Install Rewrite Module, download PHP, install C++ redistributable, and install MySQL.
-- Item 4
+- Set up MySQL
 - Item 5
 
 <h2>Installation Steps</h2>
@@ -42,15 +42,23 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-<img src="https://i.ibb.co/LZ7VMMW/lab3-5.png" height="80%" width="80%" alt=""/>
+<img src="https://i.ibb.co/LZ7VMMW/lab3-5.png" height="70%" width="70%" alt=""/>
 </p>
 <p>
-<img src="https://i.ibb.co/mT5tY0H/lab3-6.png" height="80%" width="80%" alt=""/>
+<img src="https://i.ibb.co/mT5tY0H/lab3-6.png" height="70%" width="70%" alt=""/>
 </p>
 <p>
-<img src="https://i.ibb.co/Nr1WnLd/lab3-7.png" height="80%" width="80%" alt=""/>
+<img src="https://i.ibb.co/Nr1WnLd/lab3-7.png" height="70%" width="70%" alt=""/>
 </p>
 <p>
 3. Next, download and install prereq files. 1. "PHP Manager"(https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view). 2. "Rewrite Module"(https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share_link). 3. "PHP 7.3.8"(https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link) - download this entire folder, create a new folder in the windows C drive and name is PHP. Once "PHP 7.3.8" is downloaded, right click it and extract the contents into that C:\PHP folder that you created. (example above). 4. "C++ redistributable"(https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view?usp=share_link). 5. "MySQL" (https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link) - be sure to click "Typical" install(example above). 
+</p>
+<br />
+
+<p>
+<img src="https://i.ibb.co/q5JBkmB/lab3-8.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+4. Next, set up MySQL. Launch MySQL, press next then press standard configuration, press next again, create a password then press next, finally press execute. A database is now installed on the VM which is used for osTicket.
 </p>
 <br />
