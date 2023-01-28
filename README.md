@@ -23,6 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Set up MySQL
 - Register PHP from within IIS
 - Install osTicket
+- Configure osTicket
 
 <h2>Installation Steps</h2>
 
@@ -100,5 +101,19 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 6. Next, go back to IIS, click sites -> Default -> osTicket, double click PHP Manager, then click "Enable or disable an extension". Next, enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll". Next, go to : C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php and rename "ost-sampleconfig.php" to "ost-config.php". Next, right click "ost-config.php", click properties -> security -> advanced, then press "Disable inheritance", then remove all. Then, press "Add" -> "select principal", and type everyone, press check, then press ok, then click "full control", press ok, then press apply to give everyone premession.
+</p>
+<br />
+
+<p>
+<img src="https://i.ibb.co/sJ910n2/lab3-17.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+<img src="https://i.ibb.co/bX3WpJW/lab3-18.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+<img src="https://i.ibb.co/BLsbYxS/lab3-19.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+7. Next, download and install HeidiSQL(https://www.heidisql.com/installers/HeidiSQL_12.3.0.6589_Setup.exe). This will allow us to connect to the SQL server and setup a database for osTicket. After installing, run Heidi and click "New". Enter the password you created for SQL and press "open". Right click "Unnamed" -> click "create new database", name the database osTicket. Next, go back to the browser and go to the osTicket installer page, fill out the information. In the Database Settings, type in "root" for "MySQL Username", enter the password you created, then for "MySQL Database" enter "osTicket". Next, press "install now". If done correctly, your screen should look like the images 2 and 3 above.
 </p>
 <br />
