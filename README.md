@@ -82,6 +82,23 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.ibb.co/SwB93Cc/lab3-12.png" height="70%" width="70%" alt=""/>
 </p>
 <p>
-6. Next install osTicket(https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6). Download osTicket from the link, click the folder and drag the “upload” folder to c:\inetpub\wwwroot (example above). Next, rename the "upload" folder to "osTicket". Next, reload IIS, open IIS, click the server name and press restart. Next, while in IIS, go to sites -> Default -> osTicket. Then on the right click "Browse *:80". If done correctly, your screen should look like image 3 above.
+6. Next, install osTicket(https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6). Download osTicket from the link, click the folder and drag the “upload” folder to c:\inetpub\wwwroot (example above). Next, rename the "upload" folder to "osTicket". Next, reload IIS, open IIS, click the server name and press restart. Next, while in IIS, go to sites -> Default -> osTicket. Then on the right click "Browse *:80". If done correctly, your screen should look like image 3 above.
+</p>
+<br />
+
+<p>
+<img src="https://i.ibb.co/9sY60bx/lab3-13.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+<img src="https://i.ibb.co/h9t4NcY/lab3-14.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+<img src="https://i.ibb.co/zXC6qdD/lab3-15.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+<img src="https://i.ibb.co/6sMfdv1/lab3-16.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+6. Next, go back to IIS, click sites -> Default -> osTicket, double click PHP Manager, then click "Enable or disable an extension". Next, enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll". Next, go to : C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php and rename "ost-sampleconfig.php" to "ost-config.php". Next, right click "ost-config.php", click properties -> security -> advanced, then press "Disable inheritance", then remove all. Then, press "Add" -> "select principal", and type everyone, press check, then press ok, then click "full control", press ok, then press apply to give everyone premession.
 </p>
 <br />
