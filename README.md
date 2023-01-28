@@ -24,6 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Register PHP from within IIS
 - Install osTicket
 - Configure osTicket
+- Clean up
 
 <h2>Installation Steps</h2>
 
@@ -100,7 +101,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.ibb.co/6sMfdv1/lab3-16.png" height="70%" width="70%" alt=""/>
 </p>
 <p>
-6. Next, go back to IIS, click sites -> Default -> osTicket, double click PHP Manager, then click "Enable or disable an extension". Next, enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll". Next, go to : C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php and rename "ost-sampleconfig.php" to "ost-config.php". Next, right click "ost-config.php", click properties -> security -> advanced, then press "Disable inheritance", then remove all. Then, press "Add" -> "select principal", and type everyone, press check, then press ok, then click "full control", press ok, then press apply to give everyone premession.
+6. Next, go back to IIS, click sites -> Default -> osTicket, double click PHP Manager, then click "Enable or disable an extension". Next, enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll". Next, in file manager go to : "C:\inetpub\wwwroot\osTicket\include" and rename "ost-sampleconfig.php" to "ost-config.php". Next, right click "ost-config.php", click properties -> security -> advanced, then press "Disable inheritance", then remove all. Then, press "Add" -> "select principal", and type everyone, press check, then press ok, then click "full control", press ok, then press apply to give everyone premession.
 </p>
 <br />
 
@@ -115,5 +116,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 7. Next, download and install HeidiSQL(https://www.heidisql.com/installers/HeidiSQL_12.3.0.6589_Setup.exe). This will allow us to connect to the SQL server and setup a database for osTicket. After installing, run Heidi and click "New". Enter the password you created for SQL and press "open". Right click "Unnamed" -> click "create new database", name the database osTicket. Next, go back to the browser and go to the osTicket installer page, fill out the information. In the Database Settings, type in "root" for "MySQL Username", enter the password you created, then for "MySQL Database" enter "osTicket". Next, press "install now". If done correctly, your screen should look like the images 2 and 3 above.
+</p>
+<br />
+
+<p>
+<img src="https://i.ibb.co/Yb3y34M/lab3-20.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+<img src="https://i.ibb.co/kXYf6Km/lab3-21.png" height="70%" width="70%" alt=""/>
+</p>
+<p>
+8. Lastly, in the file mamager, go to "C:\inetpub\wwwroot\osTicket" and delete the setup folder. Next, go to "C:\inetpub\wwwroot\osTicket\include", scroll down to "ost-config.php" and change the permissions back to "read-only". Right-click, click "security" -> "advanced" -> "everyone" -> "edit", now uncheck "modify" and "write". Press ok, and apply the changes. This completes the prereqs and intial installation of Osticket. Use this link(http://localhost/osTicket/scp/login.php), if all steps were done correctly, you should be able to login.
 </p>
 <br />
